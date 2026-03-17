@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SkyPeek</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+    <canvas id="weather-canvas"></canvas>
+    <h1> SkyPeek </h1>
+            <div class="quick-cities">
+<span onclick="getWeather('Lagos')">Lagos</span>
+<span onclick="getWeather('London')">London</span>
+<span onclick="getWeather('Dubai')">Dubai</span>
+<span onclick="getWeather('Tokyo')">Tokyo</span>
+<span onclick="getWeather('New York')">New York</span>
+<span onclick="getWeather('Moscow')">Moscow</span>
+            </div>
+    <div class="search" id="find">
+        <input type="text" placeholder="Enter a city..." id="city-input">
+<button id="search-btn">Search</button>
+<div class="suggestions" id="suggestions"></div>
+    </div>
+    <div class="weather-card">
+        <h2 id="city-name">City Name</h2>
+        <p id="temperature">--°C</p>
+        <p id="description">Weather condition</p>
+        <div class="details">
+        <p id="humidity">Humidity: --%</p>  
+        <p id="wind">Wind: -- m/s</p>
+        <p id="feels-like">Feels like: --°C</p>
+        </div>
+    </div>
+    <div class="forecast" id="forecast">
+        <!-- forecast cards will be injected here by JavaScript -->
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
